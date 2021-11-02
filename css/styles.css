@@ -20,7 +20,7 @@ body {
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 26px;
-  background-color: #fff;
+  background-color: #f1f4ff;
   color: #000;
 }
 
@@ -34,6 +34,11 @@ img {
 .container {
   width: 100%;
   max-width: 1480px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -41,7 +46,259 @@ img {
 }
 
 
-/* MAIN-CONTENT */
-main {
-  flex-grow: 1;
+.intro-2-1 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  
+  
 }
+
+.intro-info {
+  width: 50%;
+  max-width: 570px;
+  margin: 0;
+  margin-right: 12px;
+  padding: 0;
+  border-radius: 20px;
+  color: #fff;
+  background-image: url(../img/bg-imj.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.intro-info-content {
+  width: 100%;
+  max-width: 390px;
+  margin-left: 60px;
+  padding-top: 55px;
+  padding-bottom: 203px;
+}
+
+.intro-info-content-header {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 41px;
+  padding: 5px 15px;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.intro-info-content-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.intro-info-content-text {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.subscription-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 400;
+  padding: 29px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #4dc490;
+}
+
+.subscription-price-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.subscription-price-link-item-bold {
+  font-weight: 700;
+}
+
+.intro-registration-department {
+  width: 50%;
+  max-width: 570px;
+  padding-top: 55px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.intro-registration-department-title {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 79px;
+}
+
+.registration-form {
+  margin-bottom: 8px;
+}
+
+.registration-form-input {
+  width: 100%;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 11px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.registration-form-input:not(:last-child){
+  margin-bottom: 35px;
+}
+
+.registration-form-input:last-child {
+  padding-top: 63px;
+}
+
+.registration-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 19px;
+  font-weight: 600;
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  margin-top: 33px;
+  border: none;
+  border-radius: 10px;
+  background-color: #655af2;
+}
+
+.contract {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.contract-link-item {
+  color: #f03535;
+  text-decoration: none;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx),
+only screen and (                     max-width: 375px) {
+
+  .intro-2-1 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 15px;
+  }
+
+  .intro-info {
+    width: 100%;
+    max-width: 345px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+    background-image: url(../img/bg-imj.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 20px;
+  }
+
+  .intro-info-content {
+    width: 241px;
+    padding: 45px 0;
+    padding-bottom: 120px;
+    margin-left: 25px;
+    margin-right: 79px;
+  }
+
+  .intro-info-content-header {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 40px;
+  }
+
+  .intro-info-content-title {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+  
+  .intro-info-content-text {
+    width: 210px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .subscription-price {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 20px;
+  }
+
+  .intro-registration-department {
+    width: 100%;
+    max-width: 345px;
+    padding: 45px 25px;
+  }
+
+  .intro-registration-department-title {
+    width: 260px;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 45px;
+  }
+
+  .registration-form-input {
+    height: 30px;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 10px;
+  }
+
+  .registration-form-button {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 35px;
+  }
+
+  .contract {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .intro-info {
+    background-image: url(../img/bg-img@2x.jpg);
+  }
+}
+  
+  
